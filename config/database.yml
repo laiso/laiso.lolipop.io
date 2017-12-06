@@ -22,4 +22,8 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  host: mysql-1.mc.lolipop.lan
+  database: cool-usuki-0762_2njoc
+  username: cool-usuki-0762_3s82r
+  password: <%= ENV['LOLIPOP_DATABASE_PASSWORD'] %>
+
